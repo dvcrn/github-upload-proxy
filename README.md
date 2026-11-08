@@ -2,7 +2,7 @@
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/dvcrn/github-upload-proxy)
 
-Minimal Cloudflare Worker proxy for uploading images and videos to GitHub's `uploads.github.com/user-attachments/assets` endpoint.
+A Cloudflare Worker proxy that lets GitHub Apps and bots upload images and videos to GitHub issues and PRs (`uploads.github.com/user-attachments/assets`).
 
 ## Why
 
