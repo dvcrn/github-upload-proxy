@@ -1,0 +1,15 @@
+{
+  "name": "github-upload-proxy",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "sync-secrets": "fnox get API_KEY | tr -d '\\n' | wrangler secret put API_KEY && fnox get GITHUB_UPLOAD_TOKEN | tr -d '\\n' | wrangler secret put GITHUB_UPLOAD_TOKEN"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250321.0",
+    "typescript": "^5.8.2"
+  }
+}
